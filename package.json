@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "lint": "eslint index.ts && eslint src/**/*.ts",
+    "pretty": "prettier --write \"src/**/*.ts\"",
+    "seed": "node dist/scripts/load.js"
+  },
+  "dependencies": {
+    "apollo-server": "^3.13.0",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "graphql": "^16.9.0",
+    "mongoose": "^8.8.3",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "eslint": "^9.15.0",
+    "prettier": "^3.4.1",
+    "typescript": "^5.7.2"
+  }
+}
